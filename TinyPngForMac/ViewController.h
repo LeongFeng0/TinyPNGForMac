@@ -7,9 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DragDropImageView.h"
+@interface ViewController : NSViewController <DragDropImageViewDelegate>
 
-@interface ViewController : NSViewController
-
+@property (nonatomic, strong) DragDropImageView * dragDropIamgeView;
+@property (weak) IBOutlet NSButton *settingButton;
+@property (weak) IBOutlet NSButton *openFolderButton;
+@property (weak) IBOutlet NSTextField *tasksDetailTextField;
 
 @end
 
